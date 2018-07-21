@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+	<meta charset="utf-8">
 	<title>Sign Up Form</title>
 </head>
+
 <body>
 	<h1>Please Sign Up</h1>
+	<main>
+		<form>
+			<label for="username">Email</label>
+			<input type="email" id="username" name="username" value="" placeholder="Email Address" required>
 
-	<form>
-		<label for="username">Email</label>
-  		<input type="email" id="username" name="username" value="" placeholder="Email Address">
+			<br>
+			<label for="pwd">Password</label>
+			<input type="password" id="pwd" name="pwd" value="" placeholder="Password">
 
-		<br>
-		<label for="pwd">Password</label>
-		<input type="password" id="pwd" name="pwd" value="" placeholder="Password">
-		  
-		<br>
-		<label for="githubName">Github Username</label>
-		<input type="text" id="githubName" name="githubName" value="" placeholder="Github Name">
+			<br>
+			<label for="githubName">Github Username</label>
+			<input type="text" id="githubName" name="githubName" value="" placeholder="Github Name">
 
-		<fieldset>
-		    <legend>What Software Type Are You Running?</legend>
-		    <input id="enterprise" type="radio" name="software" value="enterprise" selected>
-		    <label for="enterprise">Enterprise</label><br>
+			<div class="container">
+				<fieldset>
+					<legend>What Software Type Are You Running?</legend>
+					<input id="enterprise" type="radio" name="software" value="enterprise" selected>
+					<label for="enterprise">Enterprise</label>
+					<br>
 
-		    <input id="pro" type="radio" name="software" value="pro">
-		    <label for="pro">Pro</label><br>
+					<input id="pro" type="radio" name="software" value="pro">
+					<label for="pro">Pro</label>
+					<br>
 
-		    <input id="free" type="radio" name="software" value="free">
-		    <label for="free">Free</label><br>
-		</fieldset>
+					<input id="free" type="radio" name="software" value="free">
+					<label for="free">Free</label>
+					<br>
+				</fieldset>
+			</div>
 
-		<input id="remember" type="checkbox" name="remember" value="remember">
-    	<label for="remember">Remember Me</label><br>
+			<input id="remember" type="checkbox" name="remember" value="remember">
+			<label for="remember">Remember Me</label>
+			<br>
 
-    	<br>
-  		<button type="submit">Submit</button>
-				 
+			<br>
+			<button type="submit">Submit</button>
 
-	</form>
+
+		</form>
+	</main>
 
 </body>
+
 </html>
